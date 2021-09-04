@@ -27,20 +27,20 @@ public class EmsApp {
 			  * Create Employee is use for the setdata into databases; 
 			  * this method is implimented using getEmployee()
 			  */
-		    	//createEmployee(session);
+		    	createEmployee(session);
 			 /**
 			  * getEmployee id use for getting data by ID
 			  */
-		    	//getEmployeebyId(session);
+		    	getEmployeebyId(session);
 			 
 			 /**
 			  * Update data using Id 
 			  */
-		    	//updateEmployeeById(session);
+		    	 updateEmployeeById(session);
 			 /**
 			  * delete Particular  data  using id 
 			  */
-		    	//deleteEmployeeById(session);
+		    	deleteEmployeeById(session);
 			 /**
 			  * fetch all data using HQl query
 			  */
@@ -53,7 +53,7 @@ public class EmsApp {
       * This Method use For the getting Employee Deatails By Id
       * @param session
       */
-	 /*  private static void getEmployeebyId(Session session) {
+	   private static void getEmployeebyId(Session session) {
 		Employee employee = session.get(Employee.class, 4);
 		if(employee != null){
 			System.out.println("\n");
@@ -62,13 +62,13 @@ public class EmsApp {
 			System.out.println("Employee doesn't exist with provideded Id..");
 		}
 		
-	}*/
+	}
        /**
         * Modify the data using id using existing data in table simple it replace the data for only one 
         * column or more column
         * @param session
         */
-	   /*private static void updateEmployeeById(Session session) {
+	   private static void updateEmployeeById(Session session) {
 		Employee employee = session.get(Employee.class, 3);
 		if(employee != null){
 			employee.setName("Smita");
@@ -84,7 +84,7 @@ public class EmsApp {
 		}
 		
 	
-	     }*/
+	     }
       /**
        * Display All Avliable data in table on console
        * @param session
@@ -103,7 +103,7 @@ public class EmsApp {
 	 * delete the data from Table using id
 	 * @param session
 	 */
-	/*private static void deleteEmployeeById(Session session) {
+	private static void deleteEmployeeById(Session session) {
 		
 		Employee employee = session.get(Employee.class, 5);
 		if(employee != null){
@@ -117,7 +117,7 @@ public class EmsApp {
 			System.out.println("Employee doesn't exist with provideded Id..");
 		}
 	
-	}*/
+	}
 		
 	
 		
@@ -127,18 +127,18 @@ public class EmsApp {
            * and call method is getEmployee();
            * @param session
            */
-		/*private static void createEmployee(Session session) {
+		private static void createEmployee(Session session) {
 		     session.beginTransaction();
 		     Integer id =(Integer)session.save(getEmployee());
 		     System.out.println("Employee is created  with Id::"+id);
 				session.getTransaction().commit();
 		
-	           }*/
+	           }
              /**
              * getMethod use for the CreateEmployee;
              * @return employee
              */
-		 /*  private static Object getEmployee() {
+		  private static Object getEmployee() {
 			Employee employee= new Employee();
 			employee.setName("swapnali");
 			employee.setSalary(55000);
@@ -146,7 +146,7 @@ public class EmsApp {
 			employee.setDesignation("devloper");
 			employee.setAddress("delhi");
 			return employee;
-		}*/
+		}
 		
 		
 		  
